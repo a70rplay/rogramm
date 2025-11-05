@@ -48,7 +48,7 @@ Credit.BackgroundTransparency = 1
 Credit.Position = UDim2.new(0, 15, 0, 50)
 Credit.Size = UDim2.new(1, -30, 0, 25)
 Credit.Font = Enum.Font.Gotham
-Credit.Text = "https://t.me/infarogramm | От @hwpvo и @freezeduser"
+Credit.Text = "https://t.me/infarogramm | От @hwpvo с любовью"
 Credit.TextColor3 = Color3.fromRGB(150, 150, 160)
 Credit.TextSize = 14
 Credit.TextXAlignment = Enum.TextXAlignment.Left
@@ -101,7 +101,7 @@ OpenCaseButton.MouseButton1Click:Connect(function()
             while opening do
                 pcall(function()
                     ReplicatedStorage:WaitForChild("ByteNetReliable"):FireServer(
-                        buffer.fromstring("\016\001\t\000Free Case\003\000\000\000")
+                        buffer.fromstring("\021\001")
                     )
                 end)
                 task.wait(0.2)
